@@ -20,8 +20,12 @@ Nos ayuda a tener cierto tipado con los **props**
 > Los *DefaultProps* entran antes a la ejecución que nuestros **props**
 
 ### useState
-Es un hook propio de React que ayuda a cambiar el estado de un valor con la ayuda de un getter y un setter.
+Es un hook propio de React que ayuda a cambiar el estado de un valor con la ayuda de un getter y una función setter que permite actualizar el estado.
 
-Esto ayuda a rederizar aquellos valores que con cambiantes en el HTML.
+```
+const [ counter, setCounter ] = useState(0);
+```
+
+Esto ayuda a rederizar aquellos valores que son cambiantes en el HTML.
 
 Si volvemos a renderizar un valor, se vuelve a ejecutar el *functional component* pero solo se renderezirá la parte cambiante del HTML y **no todo el documento**
