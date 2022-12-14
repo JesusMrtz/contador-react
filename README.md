@@ -61,4 +61,4 @@ Si volvemos a renderizar un valor, se vuelve a ejecutar el *functional component
 
 > Actualmente Jest no es bueno trabajando con el DOM, por lo cual se necesita el test-library para react. Se puede descargar con el siguiente comando `npm install --save-dev @testing-library/react`.
 
-> **NOTA:** Si estas trabajando con una versión de node inferior a la 18.0.0, necesitarás configurar el archivo `jest.config.cjs` para aceptar las pruebas en funciones *async*
+> **NOTA:** Si estas trabajando con una versión de node inferior a la 18.0.0, necesitarás configurar el archivo `jest.config.cjs` y agregar el paquete `whatwg-fetch` para aceptar las pruebas en funciones *async*
