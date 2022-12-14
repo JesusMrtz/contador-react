@@ -23,8 +23,8 @@ function returnValue() {
 function FirstApp({ title, propNumber }) {
     return (
         <>
-            <h1>{ title }</h1>
-            <h2>Estoy recibiendo un prop númerico: { propNumber * 12}</h2>
+            <h1  data-testid="title">{ title }</h1>
+            <h2 data-testid="prop-number">Estoy recibiendo un prop númerico: { propNumber * 12}</h2>
             <hr />
             <h2>Hola, mi nombre es { name }</h2>
             <h3>{ arrayOfNumbers }</h3>
